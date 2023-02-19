@@ -2,9 +2,9 @@
 #include <unistd.h>
 
 /**
- * main - Entry point
- *
- * return : 1
+ * main - this is the main function
+ * description : this function writes to the standard error output stream
+ * return : it returns an error 1
  */
 int main(void)
 {
