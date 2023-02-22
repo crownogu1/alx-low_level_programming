@@ -1,32 +1,34 @@
-#include "main.h"
 #include <stdio.h>
-/**
- * print_to_98 - print from n to 98
- * @n : number to start from
- * Return:0 or 1
- */
-int main(void)
+#include "main.h"
 
-void print_to_98(int n)
-{
+	/**
+	 * print_to_98 - prints all natural numbers from n to 98,
+	 * followed by a new line
+	 * @n: print from this number
+	 * return: 0 or 1
+	 */
+	void print_to_98(int n)
+	{
+		int i, j;
 
-while (n < 98)
-{
-	print_to_98(0);
-	print_to_98(98);
-	print_to_98(111);
-	print_to_98(81);
-	print_to_98(-10);
-	return (0);
-	printf("%i, ", n);
-	n++;
-}
-while (n > 98)
-{
-	printf("%i, ", n);
-	n--;
-}
 
-printf("98");
-putchar('\n');
-}
+		if (n <= 98)
+		{
+			for (i = n; i <= 98; i++)
+			{
+				if (i != 98)
+					printf("%d, ", i);
+				else if (i == 98)
+					printf("%d\n", i);
+			}
+		} else if (n >= 98)
+		{
+			for (j = n; j >= 98; j--)
+			{
+				if (j != 98)
+					printf("%d, ", j);
+				else if (j == 98)
+					printf("%d\n", j);
+			}
+		}
+	}
